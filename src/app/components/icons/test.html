@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%; /* Establecer altura del 100% para html y body */
+        }
+
+        body {
+            background-color: red;
+        }
+
+        .padre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Establecer altura del 100% para .padre */
+            background-color: blue;
+        }
+
+        .hijo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            width: 100%;
+            height: 100%; /* Mantener la propiedad height del .hijo */
+        }
+
+        .item1 { flex: 1; background-color: green; }
+        .item2 { flex: 1; background-color: blue; }
+        .item3 { flex: 1; background-color: pink; }
+
+    </style>
+</head>
+<body>
+    
+    <div class="padre">
+        <div class="hijo">
+            <div class="item1">Contenido 1</div>
+            <div class="item2">Contenido 2</div>
+            <div class="item3">Contenido 3</div>
+        </div>
+    </div>
+    
+</body>
+</html>
