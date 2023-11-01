@@ -1,0 +1,6 @@
+.custom-scrollbar {
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores compatibles */
+    -ms-overflow-style: none; /* Para Internet Explorer y Microsoft Edge */
+  
+    /* Estilo de la barra de desplazamiento para navegadores WebKit (como Chrome y Safari) */
+  }

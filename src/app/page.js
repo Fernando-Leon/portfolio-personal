@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Terminal from './components/TerminalComponent/Terminal'
+// import SobreMi from './estudios'
 
 export default function Home() {
   return (
@@ -20,12 +21,8 @@ export default function Home() {
               />
             </div>
           </div>
-          
-
-          
         </Terminal>
       </div>
-
     </main>
   )
 }

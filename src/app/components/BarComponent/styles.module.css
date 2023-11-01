@@ -1,0 +1,19 @@
+
+.animation {
+    margin-left: 2px;
+    margin-right: 2px;
+    height: auto;
+    width: 0%;
+    background-color: #FFF;
+    animation: animation-bar(54) 5s ease-in infinite alternate;
+}
+
+@keyframes animation-bar {
+
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%; 
+    }
+}
