@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "li": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,7 +13,8 @@
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-p5-wrapper": "^4.1.2"
+    "react-p5-wrapper": "^4.1.2",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "autoprefixer": "^10",
