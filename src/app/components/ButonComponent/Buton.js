@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import HomeSvg from '../icons/home'
 import ContactSvg from '../icons/contact';
 import StudiesSvg from '../icons/studies';
@@ -12,32 +11,23 @@ import LinkedinSvg from '../icons/linkedin';
 import GithubSvg from '../icons/github';
 import WhatsAppSvg from '../icons/whatsapp';
 
-export default function Buton( {title = '', icono = 'home', url = '/', onClick } ) {
-    let iconComponent = null;
+const style = 'w-4 h-4 fill-slate-200';
+const listIcons = {
+    home: <HomeSvg className={style}/>,
+    contact: <ContactSvg className={style}/>,
+    studies: <StudiesSvg className={style}/>,
+    proyect: <ProyectSvg className={style}/>,
+    skills: <SkillsSvg className={style}/>,
+    theme: <ThemeSvg className={style}/>,
+    lenguage: <LenguageSvg className={style}/>,
+    send: <SendSvg className={style}/>,
+    linkedin: <LinkedinSvg className={style}/>,
+    github: <GithubSvg className={style}/>,
+    whatsapp: <WhatsAppSvg className={style}/>,
+}
 
-    if (icono === 'home') {
-        iconComponent = <HomeSvg className="w-4 h-4 fill-slate-200"/>
-    }else if (icono === 'contact') {
-        iconComponent = <ContactSvg className="w-4 h-4 fill-slate-200"/>
-    }else  if (icono === 'studies') {
-        iconComponent = <StudiesSvg className="w-4 h-4 fill-slate-200"/>
-    }else if(icono === 'proyect'){ 
-        iconComponent = <ProyectSvg className="w-4 h-4 fill-slate-200"/>
-    }else if(icono == 'skills') {
-        iconComponent = <SkillsSvg className="w-4 h-4 fill-slate-200"/>
-    }else if(icono == 'theme') {
-        iconComponent = <ThemeSvg className="w-4 h-4 fill-slate-200"/>
-    }else if(icono == 'lenguage') {
-        iconComponent = <LenguageSvg className="w-4 h-4 fill-slate-200" />
-    }else if(icono == 'send') {
-        iconComponent = <SendSvg className="w-4 h-4 fill-slate-200" />
-    }else if(icono == 'linkedin') {
-        iconComponent = <LinkedinSvg className="w-4 h-4 fill-slate-200" />
-    }else if(icono == 'github') {
-        iconComponent = <GithubSvg className="w-4 h-4 fill-slate-200" />
-    }else if(icono == 'whatsapp') {
-        iconComponent = <WhatsAppSvg className="w-4 h-4 fill-slate-200" />
-    }
+export default function Buton( {title = '', icono = 'home', url = '/', onClick } ) {
+    let iconComponent = listIcons[icono] || null;
 
     return (
         <Link 

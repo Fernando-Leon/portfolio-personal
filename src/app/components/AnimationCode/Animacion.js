@@ -13,7 +13,7 @@ function sketch(p5) {
   p5.draw = () => {
     p5.background(255, 0);
     p5.rotateX(60);
-    p5.noFill(); // Relleno azul
+    p5.noFill(); 
     p5.stroke(255);
 
     for(var i = 0; i < 20; i++) {

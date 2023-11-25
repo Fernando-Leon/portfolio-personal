@@ -5,12 +5,11 @@ import CssSvg from "../icons/css";
 import JsSvg from "../icons/js";
 import HtmlSvg from "../icons/html";
 
-
 export default function StackTecnologies( { stack = ['react', 'html', 'css', 'js'] } ) {
     const stackTecnologies = stack.map( (item, index) => {
         let styles = 'w-12 h-12 fill-slate-200 cursor-pointer transition duration-500 ease';
         if(item === 'react') {
-            return <ReactSvg className={`hover:fill-blue-400 ${styles}`} key={index}/>
+            return <ReactSvg className={`hover:fill-blue-400 ${styles}`} key={index} title="React"/>
         }else if(item === 'java') {
             return <JavaSvg className={`hover:fill-orange-400 ${styles}`} key={index}/>
         }else if(item === 'css') {
@@ -26,7 +25,7 @@ export default function StackTecnologies( { stack = ['react', 'html', 'css', 'js
 
     return (
         <div className="flex w-full">
-            <div className="w-full flex items-center justify-start">
+            <div className="w-full flex items-center justify-around">
                 {stackTecnologies}
             </div>
         </div>

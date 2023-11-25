@@ -1,6 +1,4 @@
 'use client'
-
-import Image from 'next/image'
 import React from 'react'
 import Buton from '../ButonComponent/Buton'
 import { useState } from 'react'
