@@ -1,6 +1,7 @@
 import Terminal from "../components/TerminalComponent/Terminal";
 import Image from "next/image";
 import Estudios from "../components/EstudiosComponent/Estudios";
+import Animation from "../components/AnimationCode/Animacion";
 
 export default function Page() {
   return (
@@ -13,6 +14,9 @@ export default function Page() {
                 <p className="text-center w-full">
                   A lo largo de mi trayectoria e tomado diferentes cursos y diplomados, los cuales me han ayudado a mejorar mis habilidades y conocimientos.
                 </p>
+                <div className="flex items-center justify-center w-full h-auto">
+                  <Animation/>
+                </div>
             </div>
           </Terminal>
         </div>

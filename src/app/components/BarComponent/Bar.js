@@ -31,7 +31,7 @@ export default function Bar({
         <Icono nameIcon={icon} />
         <div className="flex flex-auto items-center pr-2 pl-2 h-auto">
           <span>[</span>
-          <div className="flex-auto bg-green-400 ml-1 mr-1">
+          <div className="flex-auto bg-purple-400 ml-1 mr-1">
             <div
               className={styles.animation}
               style={{

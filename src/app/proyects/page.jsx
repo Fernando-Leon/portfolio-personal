@@ -20,7 +20,7 @@ export default function Page() {
           "js"
         ],
         "github": "https://github.com/Fernando-Leon/vscode-extencion-theme-1",
-        "deploy": null
+        "deploy": "https://marketplace.visualstudio.com/items?itemName=layon-extensions.layonuno"
       },
       {
         "title": "Entrenamiento Fisico APP",
@@ -93,7 +93,6 @@ export default function Page() {
                 { listProyects }
               </div>
             </div>
-
           </Terminal>
         </div>
 

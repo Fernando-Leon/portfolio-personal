@@ -34,13 +34,6 @@ export default function Page() {
                   <Bar name="React" icon="react" level='avanzado'/>
                   <Bar name="Vue" icon="vue" level='experto'/>
                   <Bar name="Linux" icon="linux" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
-                  <Bar name="Windows" icon="windows" level='base'/>
                 </div>
             </div>
           </Terminal>

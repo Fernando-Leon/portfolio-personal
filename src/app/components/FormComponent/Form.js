@@ -9,22 +9,22 @@ export default function Form() {
             </div>
             <div className="w-full">
                 <input 
-                className="w-full bg-transparent border-2 border-green-400 pl-2 rounded-sm color-white placeholder:text-green-200 outline-none"
+                className="w-full bg-transparent border-2 border-purple-400 pl-2 rounded-sm color-white placeholder:text-purple-200 outline-none"
                 type="text" placeholder="Your name"/>
             </div>
             <div className="w-full">
                 <input 
-                className="w-full bg-transparent border-2 border-green-400 pl-2 rounded-sm color-white placeholder:text-green-200 outline-none"
+                className="w-full bg-transparent border-2 border-purple-400 pl-2 rounded-sm color-white placeholder:text-purple-200 outline-none"
                 type="text" placeholder="Your@email.com"/>
             </div>
             <div className="w-full">
                 <input 
-                className="w-full bg-transparent border-2 border-green-400 pl-2 rounded-sm color-white placeholder:text-green-200 outline-none"
+                className="w-full bg-transparent border-2 border-purple-400 pl-2 rounded-sm color-white placeholder:text-purple-200 outline-none"
                 type="text" placeholder="Affair"/>
             </div>
             <div className="w-full">
             <textarea 
-                className="w-full bg-transparent border-2 border-spacing-2 border-green-400 pl-2 rounded-sm placeholder:text-green-200 outline-none"
+                className="w-full bg-transparent border-2 border-spacing-2 border-purple-400 pl-2 rounded-sm placeholder:text-purple-200 outline-none"
             id="w3review" rows="4" cols="50" placeholder="Your message...">
             </textarea>
             </div>

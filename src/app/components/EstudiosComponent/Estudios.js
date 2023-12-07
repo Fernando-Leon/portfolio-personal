@@ -11,7 +11,7 @@ export default function Estudios( { titulo = "Titulo", descripcion = "descripcio
 
     return (
         
-        <div className="flex w-full gap-5 justify-between items-center border border-green-300 p-4">
+        <div className="flex w-full gap-5 justify-between items-center border border-purple-300 p-4 rounded-lg">
             <h3> { titulo } </h3>
             <p> { descripcion } </p>
             <div>

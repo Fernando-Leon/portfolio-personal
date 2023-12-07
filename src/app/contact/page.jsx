@@ -8,11 +8,9 @@ import Animation from "../components/AnimationCode/Animacion";
 export default function Page() {
   return (
     <main className="h-min-content p-4">
-        <div className='w-full h-full grid gap-4 grid-rows-5'>
-          
-          <div className="grid grid-rows-3 grid-cols-5 gap-4 row-span-4">
+        <div className='w-full h-full grid grid-rows-3 grid-cols-3 gap-4'>
 
-            <div className="row-span-4 col-span-3">
+            <div className="row-span-3 col-span-2">
               <Terminal command='Show form contact'>
                 <div className='w-full h-full grid items-center'>
                     <Form />
@@ -20,28 +18,27 @@ export default function Page() {
               </Terminal>
             </div>
 
-            <div className="row-span-4 col-span-2">
+            <div className="row-span-2 col-span-1">
               <Terminal command='Show proyects'>
-              <div className='w-full h-full grid'>
-                <Animation />
+              <div className='w-full h-full flex items-center justify-center'>
+                <Animation size={10} widthCanvas={200} heightCanvas={200}/>
               </div>
               </Terminal>
             </div>
 
-          </div>
-
-          <div className="row-span-1">
-            <Terminal command='Show links contact'>
-              <div className='w-full h-full grid items-center justify-center'>
-                <div className="flex gap-3">
-                  <Buton icono="linkedin" title="Linkedin"/>
-                  <Buton icono="whatsapp" title="WhatsApp"/>
-                  <Buton icono="github" title="GitHub"/>
+            <div className="row-span-1 col-span-1">
+              <Terminal command='Show links contact'>
+                <div className='w-full h-full grid items-center justify-center '>
+                  <div className="flex gap-3">
+                    <Buton icono="linkedin" title="Linkedin"/>
+                    <Buton icono="whatsapp" title="WhatsApp"/>
+                    <Buton icono="github" title="GitHub"/>
+                  </div>
                 </div>
-              </div>
-            </Terminal>
+              </Terminal>
+            </div>
+
           </div>
-      </div>
     </main>
   );
 }

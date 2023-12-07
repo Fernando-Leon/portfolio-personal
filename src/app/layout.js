@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{ backgroundImage:  'url("/images/img3.jpg")', height: '100vh', margin: '0px', padding: '0px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+      <body className={inter.className} style={{ backgroundImage:  'url("/images/Wall1.jpg")', height: '100vh', margin: '0px', padding: '0px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div style={{height: '8vh'}}>
         <NavBar style={{ backgroundColor: 'blue'}}/>
         </div>
