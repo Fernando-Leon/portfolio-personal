@@ -6,6 +6,7 @@ import { useState } from 'react'
 export function NavBar() {
 
     const [dynamicTitle, setDynamicTitle] = useState('Sobre Mi'); 
+    const [darkMode, setDarkMode] = useState(false);
 
     const handleButtonClick = (newTitle) => {
         setDynamicTitle(newTitle); 
@@ -27,7 +28,7 @@ export function NavBar() {
             </div>
 
             <div className='flex gap-2 flex-auto justify-end content-center align-middle'>
-                <Buton icono='theme' title=''/>
+                <Buton icono='theme' title='' onClick={() => setDarkMode(!darkMode)}/>
                 <Buton icono='lenguage' title=''/>
             </div>
         </div> 

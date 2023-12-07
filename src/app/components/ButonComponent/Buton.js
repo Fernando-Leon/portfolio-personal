@@ -10,6 +10,7 @@ import Link from 'next/link';
 import LinkedinSvg from '../icons/linkedin';
 import GithubSvg from '../icons/github';
 import WhatsAppSvg from '../icons/whatsapp';
+import DeplopySvg from '../icons/deploy';
 
 const style = 'w-4 h-4 fill-slate-200';
 const listIcons = {
@@ -24,6 +25,7 @@ const listIcons = {
     linkedin: <LinkedinSvg className={style}/>,
     github: <GithubSvg className={style}/>,
     whatsapp: <WhatsAppSvg className={style}/>,
+    deploy: <DeplopySvg className={style}/>,
 }
 
 export default function Buton( {title = '', icono = 'home', url = '/', onClick } ) {
