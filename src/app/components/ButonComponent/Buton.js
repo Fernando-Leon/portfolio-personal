@@ -12,7 +12,7 @@ import GithubSvg from '../icons/github';
 import WhatsAppSvg from '../icons/whatsapp';
 import DeplopySvg from '../icons/deploy';
 
-const style = 'w-4 h-4 fill-slate-200';
+const style = 'w-4 h-4 fill-slate-200 dark:fill-purple-400';
 const listIcons = {
     home: <HomeSvg className={style}/>,
     contact: <ContactSvg className={style}/>,
@@ -34,7 +34,7 @@ export default function Buton( {title = '', icono = 'home', url = '/', onClick }
     return (
         <Link 
         onClick={onClick}
-        href={url} className="flex items-center p-2 bg-black bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg cursor-pointer gap-1 hover:bg-gray-700">
+        href={url} className="flex items-center p-2 bg-black bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg cursor-pointer gap-1 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-500 dark:text-white">
             { iconComponent }
             <span className='text-sm flex-grow rounded max-h-4 flex items-center'> { title } </span>
         </Link>

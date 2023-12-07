@@ -1,12 +1,12 @@
 export default function Termnal( {command = 'command', children} ) {
     return (
-  <div className='min-w-full h-full border-2 border-purple-400 flex flex-col justify-between bg-black bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg'>
+  <div className='min-w-full h-full border-2 text-purple-200 dark:text-white border-purple-600 dark:bg-slate-800 flex flex-col justify-between dark:bg-opacity-80 bg-opacity-10 backdrop-blur-lg rounded drop-shadow-lg'>
     
     <div className="p-4 flex">
-      <p className='text-sm text-purple-300 w-full h-auto'>Fernando-Leon@Portafolio: <span className="text-purple-200">~$</span> <span>{ command }</span></p>
+      <p className='text-sm text-purple-400 dark:text-putple-200 w-full h-auto'>Fernando-Leon@Portafolio: <span className="text-purple-600 dark:text-purple-100">~$</span> <span>{ command }</span></p>
     </div>
 
-    <div className="flex-grow p-4">
+    <div className="flex-grow p-4 text-purple-200 dark:text-white">
     { children }
     </div>
 
@@ -22,6 +22,5 @@ export default function Termnal( {command = 'command', children} ) {
       </div>
     </div>
   </div>
-    )
-  }
-  
+  )
+}

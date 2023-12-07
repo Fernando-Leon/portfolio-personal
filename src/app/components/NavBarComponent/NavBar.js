@@ -5,16 +5,14 @@ import { useState } from 'react'
 
 export function NavBar() {
 
-    const [dynamicTitle, setDynamicTitle] = useState('Sobre Mi'); 
-    const [darkMode, setDarkMode] = useState(false);
+    const [dynamicTitle, setDynamicTitle] = useState('Sobre Mi');
 
     const handleButtonClick = (newTitle) => {
         setDynamicTitle(newTitle); 
-        console.log('Nuevo título:', newTitle);
     };
 
     return (
-        <div className="h-full flex content-center justify-between w-auto items-center pl-4 pr-4 overflow-hidden">
+        <div className="h-full flex content-center justify-between w-auto items-center pl-4 pr-4 overflow-hidden text-white">
             <div className='flex gap-2 flex-1 justify-start'>
                     <span className='text-xl'> { dynamicTitle } </span>
             </div>  
@@ -28,8 +26,7 @@ export function NavBar() {
             </div>
 
             <div className='flex gap-2 flex-auto justify-end content-center align-middle'>
-                <Buton icono='theme' title='' onClick={() => setDarkMode(!darkMode)}/>
-                <Buton icono='lenguage' title=''/>
+                <Buton icono='lenguage' title='Cambiar idioma'/>
             </div>
         </div> 
     )
